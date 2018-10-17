@@ -1,67 +1,58 @@
 import React, { Component } from 'react';
-import './App.css';
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = {
-      id :"",
-      task : "",
-      items: []
+    render() {
+        return (
+            <div className="container">
+                <div className="page-header">
+                    <h1>ToDo App</h1>
+                </div>
+                <div className="row">
+                    <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <div className="input-group">
+                            <input type="text" className="form-control"/>
+                            <div className="col-xs-4 col-sm-4">
+                                <button type="button" className="btn btn-block">Add Item</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+               
+                <div className="panel panel-success">
+                    
+                    <table className="table table-hover">
+                        
+                        <tbody>
+                            <tr>
+                              
+                                <td>Work</td>
+                                
+                                <td>
+                                    <button type="button" className="btn btn-sm">Edit</button>
+                                    <button type="button" className="btn btn-sm">&#xff38;</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Eat</td>
+                                
+                                <td>
+                                    <button type="button" className="btn btn-sm">Edit</button>
+                                    <button type="button" className="btn btn-sm">&#xff38;</button>
+                                </td>
+                            </tr>
+                            
+                           
+                           
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        );
     }
-    this.onSubmit = this.onSubmit.bind(this);
-    this.onChange = this.onChange.bind(this);
-  }
-  onChange = event => {
-    this.setState({task: event.target.value});
-  }
-  onSubmit = event => {
-    event.preventDefault();
-    this.setState ({
-      task: "",
-      items: [...this.state.items, this.state.task]
-
-    })
-  }
-  render() {
-    return (
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 mx-auto">
-            <h1 className="text-center">ToDo App</h1>
-          </div>
-      
-        </div>
-        <div>
-          <form onSubmit={this.onSubmit}>
-          <div className="form-group">
-      
-            <input 
-              type = "text"
-              className = "form-control"
-              id = "taskName"
-              value ={this.state.task}
-              onChange={this.onChange}
-            />
-          </div>
-          <button type="submit" className="btn btn-sucess btn-block">+Add Task</button>
-          </form>
-          <table className="table nt-3">
-            {this.state.items.map ((item, index) => (
-              <tr>
-                <td key={index}className = "text-left">
-                  {item}
-                </td>
-              </tr>
-              
-            ))}
-            
-          </table>
-        </div>
-
-      </div>
-    );
-  }
 }
 
 export default App;
