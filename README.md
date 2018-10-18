@@ -1,6 +1,8 @@
 # ToDo_App
 --------------------
 # Tên: Huỳnh Ái Liên
+# Email: huynh.ailien.7@gmail.com
+# Số điện thoại: 01655861801
 # Vị trí: Thực Tập Sinh Front-end tại Rockship
 -------------------
 Câu 3: ReactJS, Jquery, Angular khác nhau như thế nào
