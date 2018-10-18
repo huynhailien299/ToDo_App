@@ -12,13 +12,14 @@ class App extends Component {
       todos: [
         {id: 0, text: "Work"},
         {id: 1, text: "Eat"},
-        
+        {id: 2, text: "Sleep"},
+        {id: 3, text: "Play"},
       ],
-      nextId: 2
+      nextId: 4
     };
 
     this.addTodo = this.addTodo.bind(this);
-    this.removeTodo = this.removeTodo.bind(this);
+    this.deleteTask = this.deleteTask.bind(this);
   }
 
   addTodo(todoText) {
@@ -30,7 +31,7 @@ class App extends Component {
     });
   }
 
-  removeTodo(id) {
+  deleteTask(id) {
     this.setState({
         todos: this.state.todos.filter((todo, index) => todo.id !== id)
       });
@@ -45,7 +46,7 @@ class App extends Component {
           <ul>
             {
               this.state.todos.map((todo) => {
-                return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo}/>
+                return <TodoItem todo={todo} key={todo.id} id={todo.id} deleteTask={this.deleteTask}/>
                 
               })
               

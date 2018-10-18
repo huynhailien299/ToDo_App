@@ -6,8 +6,8 @@ export default class TodoItem extends React.Component {
     super(props);
   }
 
-  removeTodo(id) {
-    this.props.removeTodo(id);
+  deleteTask(id) {
+    this.props.deleteTask(id);
   }
 
   render() {
@@ -21,7 +21,7 @@ export default class TodoItem extends React.Component {
                         <button type="button" class="btn btn-primary">
                             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                         </button>
-                        <button type="button" class="btn btn-danger"onClick={(e)=> this.removeTodo(this.props.id) }>
+                        <button type="button" class="btn btn-danger"onClick={(e)=> this.deleteTask(this.props.id) }>
                             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                         </button>{this.props.todo.text}
                     </div>
