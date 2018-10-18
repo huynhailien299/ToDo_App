@@ -1,4 +1,8 @@
 # ToDo_App
+--------------------
+# Tên: Huỳnh Ái Liên
+# Vị trí: Thực Tập Sinh Front-end tại Rockship
+-------------------
 Câu 3: ReactJS, Jquery, Angular khác nhau như thế nào
 jQuery là chỉ thư viện để thao tác với DOM
 Angular là MVC hay MVVM framework, thường dùng để phát triển SPA 
