@@ -1,0 +1,30 @@
+.task-wrap {
+    border: 1px solid black;
+    margin-top: 32px;
+}
+
+.add-wrap {
+    width: 560px;
+    margin: 0 auto;
+}
+
+.task-wrap .task-name {
+    text-align: left;
+    padding-left: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 14pt;
+}
+
+.task-wrap .task-btn {
+    text-align: right;
+}
+
+.task-wrap .task-btn button {
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+.clear {
+    clear: both;
+}
