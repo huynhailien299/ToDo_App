@@ -9,6 +9,7 @@ Câu 1:Kể tên những thư viện CSS và JS bạn đã dùng, kể cả tron
 điểm của các thư viện đó
 
 Câu 2: Trình bày về xử lý bất đồng bộ trong JS và bạn đã dùng chỗ nào trong project trên 
+
 Xứ lí bất đồng bộ là 1 phần quan trọng trong javascript. Cách tiếp cận phổ biến với xử lí không đồng bộ là sử dụng các callback. Khác với việc thực hiện tuần tự các phép toán như trong 1 vòng for, có 1 khoảng thời gian chênh lệch nhất định giữa thời điểm giữa phần chương trình được chạy ngay lập tức và phần chương trình khác được gọi ra sau đó (callback).
 
 Câu 3: ReactJS, Jquery, Angular khác nhau như thế nào
