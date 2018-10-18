@@ -3,15 +3,17 @@ import React, { Component } from 'react';
 import './ListTask.css'
 
 class ListTask extends Component {
+  
+    
     render() {
         return (
             <div>
                 <div className="add-wrap">
 					<div className="col-lg-12">
 						<div className="input-group">
-						<input type="text" className="form-control" placeholder="Search for..." />
+						<input type="text" className="form-control" placeholder="Search for..." value={this.state.value} onChange={this.handleChange} />
 						<span className="input-group-btn">
-							<button className="btn btn-default" type="button">+ Add task</button>
+							<button className="btn btn-default"onClick={() => this.addTodo(this.state.value)} type="button">+ Add task</button>
 						</span>
 						</div>
 					</div>
