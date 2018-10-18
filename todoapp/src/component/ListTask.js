@@ -3,8 +3,16 @@ import React, { Component } from 'react';
 import './ListTask.css'
 
 class ListTask extends Component {
-  
+   
+    constructor(props) {
+        super(props);
+        this.state = {mang: ['A', 'B']};
+    }
     
+       
+    
+      
+      
     render() {
         return (
             <div>
@@ -20,7 +28,7 @@ class ListTask extends Component {
 				</div>
                 <div className="clear" />
                 <div className="task-wrap">
-                    <div className="task-name">Name</div>
+                    <div className="task-name">Work</div>
                     <div className="task-btn">
                         <button type="button" class="btn">
                             <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
@@ -32,6 +40,22 @@ class ListTask extends Component {
                             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                         </button>
                     </div>
+                    
+                </div>
+                <div className="task-wrap">
+                    <div className="task-name">Eat</div>
+                    <div className="task-btn">
+                        <button type="button" class="btn">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    
                 </div>
             </div>
         );
